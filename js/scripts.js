@@ -1523,7 +1523,6 @@ mr = (function (mr, $, window, document){
 
 }(mr, jQuery, window, document));
 
-
 //////////////// Masonry
 mr = (function (mr, $, window, document){
     "use strict";
@@ -1539,7 +1538,14 @@ mr = (function (mr, $, window, document){
             var masonryContainer = masonryFilter.closest('.masonry').find('.masonry__container');
             var filterValue = '*';
             if(masonryFilter.attr('data-masonry-filter') !== '*'){
+                // let subInfo = document.getElementById('subsidiary-info');
+                // subInfo.addClass('show-me');
+                // subInfo.removeClass('hide-me');
                 filterValue = '.filter-'+masonryFilter.attr('data-masonry-filter');
+            } else {
+                // let subInfo = document.getElementById('subsidiary-info');
+                // subInfo.addClass('hide-me');
+                // subInfo.removeClass('show-me');
             }
             masonryFilter.siblings('li').removeClass('active');
             masonryFilter.addClass('active');

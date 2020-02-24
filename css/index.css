@@ -47,3 +47,10 @@
 .company-logo-size{
   width:5em;
 }
+
+.show-me{
+  display: block;
+}
+.hide-me{
+  display: none;
+}

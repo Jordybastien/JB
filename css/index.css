@@ -1,0 +1,49 @@
+/* TABLE OF CONTENTS */
+/* 1. Navbar */
+/* 2. Menu */
+
+
+
+
+/* 1. Navbar */
+.new-logo{
+  width: 10em;
+  height: 7em;
+}
+
+
+/* 2. Menu */
+.my-menu {
+  float: right;
+  color: #fff;
+}
+.my-link {
+  transition: 1s;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.my-link:hover {
+  color: #9b0000 !important;
+  background: transparent;
+  border: none;
+}
+.my-link:active {
+  border: none;
+}
+.my-link:focus {
+  border: none;
+}
+
+/* 3. Font sizes */
+
+.size-1{
+  font-size: 1.2em!important;
+}
+
+
+.company-logo-size{
+  width:5em;
+}

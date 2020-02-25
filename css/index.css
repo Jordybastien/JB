@@ -2,33 +2,41 @@
 /* 1. Navbar */
 /* 2. Menu */
 
-
-
-
 /* 1. Navbar */
-.new-logo{
-  width: 10em;
-  height: 7em;
+.new-logo {
+  width: 7em;
+  height: 4em;
 }
-
 
 /* 2. Menu */
 .my-menu {
   float: right;
   color: #fff;
 }
+@media screen and (max-width: 600px) {
+  .my-menu {
+    float: left;
+    color: #fff;
+  }
+  .my-link {
+    padding: 0px;
+    margin: 0px;
+  }
+}
 .my-link {
-  transition: 1s;
-  color: #ffffff;
+  transition: 1.5s;
+  /* color: #ffffff; */
   text-decoration: none;
   background: transparent;
   border: none;
   cursor: pointer;
 }
 .my-link:hover {
-  color: #9b0000 !important;
-  background: transparent;
+  color: white !important;
+  background: #9b0000 !important;
   border: none;
+  height: 50px;
+  padding: 0px 5px 0px 5px;
 }
 .my-link:active {
   border: none;
@@ -39,18 +47,18 @@
 
 /* 3. Font sizes */
 
-.size-1{
-  font-size: 1.2em!important;
+.size-1 {
+  font-size: 1.2em !important;
 }
 
-
-.company-logo-size{
-  width:5em;
+.company-logo-size {
+  width: 5em;
 }
 
-.show-me{
-  display: block;
+.color-white {
+  color: #fff;
 }
-.hide-me{
-  display: none;
+.color-black {
+  color: #000;
 }
+

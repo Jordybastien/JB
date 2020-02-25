@@ -4,7 +4,34 @@
     <meta charset="utf-8" />
     <title>J.L Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Site Description Here" />
+    <meta
+      name="description"
+      content="J.L Company est une entreprise à plusieurs branches fondée par
+      Jonathan Lyani Bishweka dans l'an 2018. Elle opère dans la
+      province du Nord Kivu principalement à Goma, dans la République
+      Démocratique du Congo."
+    />
+    <meta
+      property="og:type"
+      content="J.L Company est une entreprise à plusieurs branches fondée par
+      Jonathan Lyani Bishweka dans l'an 2018. Elle opère dans la
+      province du Nord Kivu principalement à Goma, dans la République
+      Démocratique du Congo."
+    />
+    <meta property="og:title" content="J.L Company" />
+    <meta
+      property="og:description"
+      content="J.L Company est une entreprise à plusieurs branches fondée par
+      Jonathan Lyani Bishweka dans l'an 2018. Elle opère dans la
+      province du Nord Kivu principalement à Goma, dans la République
+      Démocratique du Congo."
+    />
+    <link rel="apple-touch-icon" href="assets/logos/JL-company-2.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/logos/JL-company-2.png"
+    />
     <link
       href="css/bootstrap.css"
       rel="stylesheet"
@@ -67,9 +94,36 @@
   <body class=" ">
     <a id="start"></a>
     <div class="nav-container ">
+      <div class="bar bar--sm visible-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 col-md-2">
+              <a href="index.html">
+                <img
+                  class="logo logo-dark"
+                  alt="logo"
+                  src="assets/logos/JL-company-2.png"
+                />
+              </a>
+            </div>
+            <div class="col-9 col-md-10 text-right">
+              <a
+                href="#"
+                class="hamburger-toggle"
+                data-toggle-class="#menu1;hidden-xs hidden-sm"
+              >
+                <i class="icon icon--sm stack-interface stack-menu"></i>
+              </a>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </div>
       <nav
         id="menu1"
         class="bar bar--sm bar-1 hidden-xs bar--absolute bar--transparent"
+        data-scroll-class="100px:pos-fixed"
       >
         <div class="container py-0">
           <div class="row py-0">
@@ -89,19 +143,52 @@
               <div class="bar__module shift">
                 <ul class="menu-horizontal text-left my-menu">
                   <li class="my-link">
-                    <span class="dropdown__trigger my-link size-1"
+                    <!-- <span class="dropdown__trigger my-link size-1"
                       >Accueil</span
+                    > -->
+                    <button
+                      class="dropdown__trigger my-link size-1"
+                      onclick="goToDiv('banner')"
+                      href="#"
                     >
+                      Accueil
+                    </button>
                   </li>
                   <li class="my-link">
-                    <span class="dropdown__trigger my-link size-1"
+                    <!-- <span class="dropdown__trigger my-link size-1"
                       >La société</span
+                    > -->
+                    <button
+                      class="dropdown__trigger my-link size-1"
+                      onclick="goToDiv('soc')"
+                      href="#"
                     >
+                      La société
+                    </button>
                   </li>
                   <li class="my-link">
-                    <span class="dropdown__trigger my-link size-1"
-                      >Gallerie</span
+                    <!-- <span class="dropdown__trigger my-link size-1"
+                      >La société</span
+                    > -->
+                    <button
+                      class="dropdown__trigger my-link size-1"
+                      onclick="goToDiv('suc')"
+                      href="#"
                     >
+                      Nos succurcales
+                    </button>
+                  </li>
+                  <li class="my-link">
+                    <!-- <span class="dropdown__trigger my-link size-1"
+                      >Gallerie</span
+                    > -->
+                    <button
+                      class="dropdown__trigger my-link size-1"
+                      onclick="goToDiv('gal')"
+                      href="#"
+                    >
+                      Gallerie
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -116,6 +203,7 @@
     </div>
     <div class="main-container">
       <section
+        id="banner"
         class="cover height-90 imagebg text-center slider slider--ken-burns"
         data-arrows="true"
         data-paging="true"
@@ -135,11 +223,13 @@
                     J.L Company est une entreprise à plusieurs branches<br />
                     fondée par Jonathan Lyani Bishweka dans l'an 2018.
                   </h4>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -161,11 +251,13 @@
                     Goma,<br />
                     dans la République Démocratique du Congo.
                   </h4>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -188,11 +280,13 @@
                     approvisionement en eau <br />et fourniture de matériaux de
                     construction
                   </h4>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -213,11 +307,13 @@
                     À l'avenir, la société visera à améliorer ses services<br />
                     dans toutes les succurcales actuelles.
                   </h4>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -234,11 +330,13 @@
                   <h1>
                     J.L Company
                   </h1>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -255,11 +353,13 @@
                   <h1>
                     J.L Company
                   </h1>
-                  <a class="btn btn--primary type--uppercase" href="#">
-                    <span class="btn__text">
-                      Visiter
-                    </span>
-                  </a>
+                  <button
+                    class="btn btn--primary type--uppercase px-5"
+                    onclick="goToDiv('soc')"
+                    href="#"
+                  >
+                    Visiter
+                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -268,7 +368,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="soc">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -293,7 +393,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="suc">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -507,7 +607,7 @@
           </div>
         </div>
       </section>
-      <section class=" ">
+      <section id="gal" class=" ">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -522,10 +622,7 @@
             >
               <span>Category:</span>
               <div class="masonry-filter-holder">
-                <div
-                  class="masonry__filters"
-                  data-filter-all-text="Gallery"
-                >
+                <div class="masonry__filters" data-filter-all-text="Gallery">
                   <ul>
                     <!-- <li class="active" data-masonry-filter="*">
                       Toutes
@@ -562,16 +659,33 @@
               class="masonry__container row masonry--active"
               style="position: relative; height: 526.812px;"
             >
-              <!-- Titles -->
+              <!-- JL Summer Festival -->
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & SOCODEE"
+                data-masonry-filter="J.L Summer Festival"
               >
-                <h3>J.L.C & SOCODEE</h3>
+                <h3>J.L Summer Festival</h3>
                 <p class="lead">
-                  J.L.C offre ses services de transport à SOCODEE.
+                  To the nights that turned into mornings, and the friends that
+                  turned into family.
                 </p>
               </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Summer Festival"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-summer-festival/summer-1.jpg"
+                  data-lightbox="Gallery 1"
+                >
+                  <img
+                    alt="Image"
+                    src="assets/JLC-summer-festival/summer-1.jpg"
+                  />
+                </a>
+              </div>
+              <!-- Serena Hotel -->
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & Goma Serena Hotel"
@@ -583,79 +697,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Ihusi hotel"
-              >
-                <h3>J.L.C & Ihusi hotel</h3>
-                <p class="lead">
-                  J.L.C offre ses services de transport à Ihusi Hotel.
-                </p>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C Water Supply"
-              >
-                <h3>J.L.C Water Supply</h3>
-                <p class="lead">
-                  JLC fournit de l'eau aux chantiers de construction.
-                </p>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-              >
-                <h3>J.L Waters</h3>
-                <p class="lead">
-                  J.L.C vous offre une chance de profiter du lac kivu en faisant
-                  du jet ski a Goma Serena Hotel.
-                </p>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Summer Festival"
-              >
-                <h3>J.L Summer Festival</h3>
-                <p class="lead">
-                    To the nights that turned into mornings, and the
-                    friends that turned into family.
-                </p>
-              </div>
-              <!-- <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Foundation"
-              >
-                <h3>J.L Foundation</h3>
-                <p class="lead">
-                    Il n'y a pas de meilleur exercice pour le coeur que
-                    de tendre la main et de soulever les autres.<br />
-                    J.L.C offre des bourses aux enfants qui sont
-                    incapables de payer pour une bonne education.<br />
-                    "Every one deserves a chance"
-                </p>
-              </div> -->
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Forward Facing UK"
-              >
-                <h3>J.L.C & Forward Facing UK</h3>
-                <p class="lead">
-                    JLC parraine des activités caritatives annuelles
-                    pour les enfants de Forward Facing.
-                </p>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C Sponsoring"
-              >
-                <h3>J.L.C Sponsoring</h3>
-                <p class="lead">
-                    JLC sponsorise des événements qui ont lieu a Goma.
-                    JLC sponsorise egalement FC Nyiragongo de Goma.
-                </p>
-              </div>
-
-              <!-- Images -->
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & Goma Serena Hotel"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -664,66 +705,6 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-serena-hotel/serena-1.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Forward Facing UK"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-forward-facing/img-3.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-forward-facing/img-3.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water/water-1.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water/water-1.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & SOCODEE"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-socodee/soc-1.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-socodee/soc-1.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water/water-2.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water/water-2.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & SOCODEE"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-socodee/soc-18.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-socodee/soc-18.JPG" />
                 </a>
               </div>
               <div
@@ -740,6 +721,66 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Goma Serena Hotel"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-serena-hotel/serena-3.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-serena-hotel/serena-3.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Goma Serena Hotel"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-serena-hotel/serena-4.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-serena-hotel/serena-4.JPG" />
+                </a>
+              </div>
+
+              <!-- JL Waters -->
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+              >
+                <h3>J.L Waters</h3>
+                <p class="lead">
+                  J.L.C vous offre une chance de profiter du lac kivu en faisant
+                  du jet ski a Goma Serena Hotel.
+                </p>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water/water-1.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water/water-1.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water/water-2.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water/water-2.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L Waters"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -748,6 +789,100 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-water/water-3.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water/water-4.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water/water-4.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water/water-5.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water/water-5.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L Waters"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water/water-6.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water/water-6.JPG" />
+                </a>
+              </div>
+
+              <!-- JL Water supply -->
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C Water Supply"
+              >
+                <h3>J.L.C Water Supply</h3>
+                <p class="lead">
+                  JLC fournit de l'eau aux chantiers de construction.
+                </p>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C Water Supply"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-water-supply/ws-1.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-water-supply/ws-1.JPG" />
+                </a>
+              </div>
+
+              <!-- JLC & SOCODEE -->
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & SOCODEE"
+              >
+                <h3>J.L.C & SOCODEE</h3>
+                <p class="lead">
+                  J.L.C offre ses services de transport à SOCODEE.
+                </p>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & SOCODEE"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-socodee/soc-1.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-socodee/soc-1.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & SOCODEE"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-socodee/soc-18.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-socodee/soc-18.JPG" />
                 </a>
               </div>
               <div
@@ -776,18 +911,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water/water-4.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water/water-4.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -796,21 +919,6 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-socodee/soc-16.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Summer Festival"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-summer-festival/summer-1.jpg"
-                  data-lightbox="Gallery 1"
-                >
-                  <img
-                    alt="Image"
-                    src="assets/JLC-summer-festival/summer-1.jpg"
-                  />
                 </a>
               </div>
               <div
@@ -827,18 +935,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Goma Serena Hotel"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-serena-hotel/serena-3.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-serena-hotel/serena-3.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -851,18 +947,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Ihusi Hotel"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-ihusi-hotel/ihusi-4.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-4.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -871,18 +955,6 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-socodee/soc-13.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C Water Supply"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water-supply/ws-1.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water-supply/ws-1.JPG" />
                 </a>
               </div>
               <div
@@ -923,18 +995,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water/water-5.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water/water-5.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -943,18 +1003,6 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-socodee/soc-10.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Ihusi Hotel"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-ihusi-hotel/ihusi-3.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-3.JPG" />
                 </a>
               </div>
               <div
@@ -971,18 +1019,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Goma Serena Hotel"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-serena-hotel/serena-4.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-serena-hotel/serena-4.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -991,18 +1027,6 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-socodee/soc-8.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L.C & Ihusi Hotel"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-ihusi-hotel/ihusi-2.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-2.JPG" />
                 </a>
               </div>
               <div
@@ -1043,18 +1067,6 @@
               </div>
               <div
                 class="masonry__item col-lg-4 col-6 filter-people"
-                data-masonry-filter="J.L Waters"
-                style="position: absolute; left: 0px; top: 0px;"
-              >
-                <a
-                  href="assets/JLC-water/water-6.JPG"
-                  data-lightbox="Gallery 1"
-                >
-                  <img alt="Image" src="assets/JLC-water/water-6.JPG" />
-                </a>
-              </div>
-              <div
-                class="masonry__item col-lg-4 col-6 filter-people"
                 data-masonry-filter="J.L.C & SOCODEE"
                 style="position: absolute; left: 0px; top: 0px;"
               >
@@ -1063,6 +1075,53 @@
                   data-lightbox="Gallery 1"
                 >
                   <img alt="Image" src="assets/JLC-socodee/soc-5.JPG" />
+                </a>
+              </div>
+
+              <!-- JL Ihusi Hotel -->
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Ihusi hotel"
+              >
+                <h3>J.L.C & Ihusi hotel</h3>
+                <p class="lead">
+                  J.L.C offre ses services de transport à Ihusi Hotel.
+                </p>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Ihusi Hotel"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-ihusi-hotel/ihusi-4.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-4.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Ihusi Hotel"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-ihusi-hotel/ihusi-3.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-3.JPG" />
+                </a>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Ihusi Hotel"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-ihusi-hotel/ihusi-2.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-2.JPG" />
                 </a>
               </div>
               <div
@@ -1077,6 +1136,42 @@
                   <img alt="Image" src="assets/JLC-ihusi-hotel/ihusi-1.JPG" />
                 </a>
               </div>
+
+              <!-- JL Forward Facing -->
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Forward Facing UK"
+              >
+                <h3>J.L.C & Forward Facing UK</h3>
+                <p class="lead">
+                  JLC parraine des activités caritatives annuelles pour les
+                  enfants de Forward Facing.
+                </p>
+              </div>
+              <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C & Forward Facing UK"
+                style="position: absolute; left: 0px; top: 0px;"
+              >
+                <a
+                  href="assets/JLC-forward-facing/img-3.JPG"
+                  data-lightbox="Gallery 1"
+                >
+                  <img alt="Image" src="assets/JLC-forward-facing/img-3.JPG" />
+                </a>
+              </div>
+
+              <!-- JL Sponsoring -->
+              <!-- <div
+                class="masonry__item col-lg-4 col-6 filter-people"
+                data-masonry-filter="J.L.C Sponsoring"
+              >
+                <h3>J.L.C Sponsoring</h3>
+                <p class="lead">
+                  JLC sponsorise des événements qui ont lieu a Goma. JLC
+                  sponsorise egalement FC Nyiragongo de Goma.
+                </p>
+              </div> -->
             </div>
             <!--end masonry container-->
           </div>

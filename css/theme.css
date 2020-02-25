@@ -3293,7 +3293,9 @@ form[action*="list-manage.com"] .small-meta {
     margin-right: 0.92857143em;
   }
   .bar--transparent:not(.bar--dark) {
-    background: none;
+    background: #ffffff57;
+    /* #00000021; */
+    /* #ffffff57 */
   }
   .bar--transparent:not(.bar--dark) .logo-dark {
     display: none;
@@ -3337,7 +3339,7 @@ form[action*="list-manage.com"] .small-meta {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
   }
   .bar.pos-fixed:not([class*="bg-"]) {
-    background: #ffffff;
+    background: #ffffff94;
   }
   .bar.pos-fixed:not([class*="bg-"]) .logo-dark {
     display: inline-block;

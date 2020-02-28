@@ -23,6 +23,15 @@
   .company-box {
     padding-top: 100px !important;
   }
+  .gal-container {
+    padding-top: 100px !important;
+  }
+  .gal-nav {
+    background: #fff !important;
+    box-shadow: 0px 0px 5px 9px rgba(0, 0, 0, 0.15) !important;
+    position: fixed;
+    top: 0 !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .my-menu {
@@ -33,6 +42,15 @@
     padding: 0px;
     margin: 0px;
     color: #000 !important;
+  }
+  .gal-nav{
+    width: 100%!important;
+    z-index: 999!important;
+    margin-top: 70px!important;
+    box-shadow: none!important;
+    background: #fff !important;
+    position: fixed;
+    top: 0 !important;
   }
 }
 .my-link {
@@ -118,8 +136,10 @@
 }
 
 .footer-header {
-  color: #9b0000!important;
+  color: #9b0000 !important;
 }
-.copyrights-note{
+.copyrights-note {
   text-align: center;
 }
+
+

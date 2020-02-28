@@ -8168,7 +8168,7 @@ input[type="image"] {
 }
 @media all and (max-width: 990px) {
   .flickity-prev-next-button {
-    display: none;
+    display: block;
   }
 }
 @media all and (min-width: 768px) {

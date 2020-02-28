@@ -1,2 +1,2 @@
-# JonathanBWebsite
-Jonathan Bishweka Website
+# JB
+JB

@@ -1549,6 +1549,7 @@ mr = (function (mr, $, window, document){
                     setTimeout(function(){ mr_parallax.profileParallaxElements(); },100);
                 }
             });
+            
             masonryContainer.isotope({ filter: filterValue });
             
         });

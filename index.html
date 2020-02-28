@@ -90,6 +90,7 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class=" ">
     <a id="start"></a>
@@ -163,7 +164,7 @@
                       onclick="goToDiv('soc')"
                       href="#"
                     >
-                      La société
+                      À propos de nous
                     </button>
                   </li>
                   <li class="my-link">
@@ -175,7 +176,7 @@
                       onclick="goToDiv('suc')"
                       href="#"
                     >
-                      Nos succurcales
+                      Nos activités
                     </button>
                   </li>
                   <li class="my-link">
@@ -207,6 +208,8 @@
         class="cover height-90 imagebg text-center slider slider--ken-burns"
         data-arrows="true"
         data-paging="true"
+        data-autoplay="true"
+        data-timing="10000"
       >
         <ul class="slides">
           <li class="imagebg" data-overlay="4">
@@ -216,20 +219,13 @@
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <h4>
+                  <h4 data-aos="fade-up-right" data-aos-duration="2000">
                     J.L Company est une entreprise à plusieurs branches<br />
                     fondée par Jonathan Lyani Bishweka dans l'an 2018.
                   </h4>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -243,21 +239,14 @@
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <h4>
+                  <h4 data-aos="fade-up-right" data-aos-duration="2000">
                     Elle opère dans la province du Nord Kivu principalement à
                     Goma,<br />
                     dans la République Démocratique du Congo.
                   </h4>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -266,27 +255,20 @@
           </li>
           <li class="imagebg" data-overlay="4">
             <div class="background-image-holder">
-              <img alt="background" src="assets/img-3.JPG" />
+              <img alt="background" src="assets/img-3.jpg" />
             </div>
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <h4>
+                  <h4 data-aos="fade-up-right" data-aos-duration="2000">
                     L' entreprise s'implique dans le secteur du transport,<br />
                     revente de puissance électrique avec Umoja Power,
                     approvisionement en eau <br />et fourniture de matériaux de
                     construction
                   </h4>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -300,20 +282,13 @@
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <h4>
+                  <h4 data-aos="fade-up-right" data-aos-duration="2000">
                     À l'avenir, la société visera à améliorer ses services<br />
                     dans toutes les succurcales actuelles.
                   </h4>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -327,16 +302,9 @@
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -350,16 +318,9 @@
             <div class="container pos-vertical-center">
               <div class="row">
                 <div class="col-md-12">
-                  <h1>
+                  <h1 data-aos="fade-up-left" data-aos-duration="2000">
                     J.L Company
                   </h1>
-                  <button
-                    class="btn btn--primary type--uppercase px-5"
-                    onclick="goToDiv('soc')"
-                    href="#"
-                  >
-                    Visiter
-                  </button>
                 </div>
               </div>
               <!--end of row-->
@@ -368,12 +329,12 @@
           </li>
         </ul>
       </section>
-      <section id="soc">
+      <section id="soc" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <h2>La société</h2>
-              <p class="lead">
+            <div class="col-md-8">
+              <h2 data-aos="fade-up" data-aos-duration="1000">La société</h2>
+              <p class="lead" data-aos="fade-up-left" data-aos-duration="1000">
                 J.L Company est une entreprise à plusieurs branches fondée par
                 Jonathan Lyani Bishweka dans l'an 2018. Elle opère dans la
                 province du Nord Kivu principalement à Goma, dans la République
@@ -382,7 +343,9 @@
                 L' entreprise s'implique dans le secteur du transport, revente
                 de puissance électrique avec Umoja Power, approvisionement en
                 eau et fourniture de matériaux de construction.
-                <br /><br />
+              </p>
+              <br /><br />
+              <p class="lead" data-aos="fade-up-left" data-aos-duration="1000">
                 À l'avenir, la société visera à améliorer ses services dans
                 toutes les succurcales actuelles et éventuellement, à se
                 développer dans d'autres domaines qui améliorent la ville de
@@ -390,14 +353,53 @@
                 les politiques et valeurs fondamentales de l'entreprise.
               </p>
             </div>
+            <div
+              class="col-md-4"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <div
+                class="img-frame-black"
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
+                src="assets/JB-2.jpeg"
+              >
+                <div
+                  class="img-frame-red"
+                  data-aos="fade-up-right"
+                  data-aos-duration="1500"
+                  src="assets/JB-2.jpeg"
+                >
+                  <img
+                    data-aos="fade-up-right"
+                    data-aos-duration="2000"
+                    src="assets/JB-2.jpeg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="suc">
+      <!-- <div class="section-separator-1"></div> -->
+      <section
+        id="suc"
+        class="pt-5 activities"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2>Nos Succurcales</h2>
+              <h2
+                class="color-white"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                Nos activités
+              </h2>
               <div
                 class="slider"
                 data-arrows="false"
@@ -413,30 +415,36 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 0%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
-                          <img
-                            class="company-logo-size"
-                            src="assets/logos/JL-company-2.png"
-                            alt=""
-                            srcset=""
-                          />
-                          <h4>J.L.C & Goma Serena Hotel</h4>
-                          <p>
-                            J.L.C offre ses services de transport à Goma Serena
-                            Hotel.
-                          </p>
+                          <div>
+                            <img
+                              class="company-logo-size"
+                              src="assets/logos/JL-company-2.png"
+                              alt=""
+                              srcset=""
+                            />
+                            <h4>J.L.C & Goma Serena Hotel</h4>
+                            <p>
+                              J.L.C offre ses services de transport à Goma
+                              Serena Hotel.
+                            </p>
+                          </div>
                         </div>
                         <!--end feature-->
                       </li>
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 33.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -454,9 +462,11 @@
                       <li
                         class="col-md-4 col-12 slide is-selected"
                         style="position: absolute; left: 66.67%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -474,9 +484,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 100%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -494,9 +506,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 133.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -515,9 +529,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 133.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -536,9 +552,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 133.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box"
                         >
                           <img
                             class="company-logo-size"
@@ -560,9 +578,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 133.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -581,9 +601,11 @@
                       <li
                         class="col-md-4 col-12 slide"
                         style="position: absolute; left: 133.33%;"
+                        data-aos="fade-up-left"
+                        data-aos-duration="2000"
                       >
                         <div
-                          class="feature feature-3 boxed boxed--lg boxed--border text-center"
+                          class="feature feature-3 boxed boxed--lg boxed--border text-center companies-box company-box"
                         >
                           <img
                             class="company-logo-size"
@@ -607,7 +629,13 @@
           </div>
         </div>
       </section>
-      <section id="gal" class=" ">
+      <!-- <div class="section-separator-2"></div> -->
+      <section
+        id="gal"
+        class="pt-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -622,36 +650,10 @@
             >
               <span>Category:</span>
               <div class="masonry-filter-holder">
-                <div class="masonry__filters" data-filter-all-text="Gallery">
-                  <ul>
-                    <!-- <li class="active" data-masonry-filter="*">
-                      Toutes
-                    </li> -->
-                    <li data-masonry-filter="tab-1" class="">
-                      J.L.C & Goma Serena Hotel
-                    </li>
-                    <li data-masonry-filter="tab-2" class="active">
-                      J.L.C & Ihusi Hotel
-                    </li>
-                    <li data-masonry-filter="tab-3" class="active">
-                      J.L.C & SOCODEE
-                    </li>
-                    <li data-masonry-filter="tab-4" class="">
-                      J.L.C Water Supply
-                    </li>
-                    <!-- <li data-masonry-filter="tab-5" class="">J.L Waters</li> -->
-                    <li data-masonry-filter="tab-6" class="">
-                      J.L Summer Festival
-                    </li>
-                    <li data-masonry-filter="tab-7" class="">J.L Foundation</li>
-                    <li data-masonry-filter="tab-8" class="">
-                      J.L.C & Forward Facing UK
-                    </li>
-                    <li data-masonry-filter="tab-9" class="">
-                      J.L.C Sponsoring
-                    </li>
-                  </ul>
-                </div>
+                <div
+                  class="masonry__filters"
+                  data-filter-all-text="Gallerie"
+                ></div>
               </div>
             </div>
             <!--end masonry filters-->
@@ -1182,11 +1184,16 @@
       <footer class="text-center space--sm footer-5 bg--dark py-3">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-4">
               <div class="heading-block mb-0">
+                <h4 class="footer-header">ADDRESSES</h4>
+                <br />
                 REPUBLIQUE DEMOCRATIQUE DU CONGO<br />
                 GOMA NORD KIVU<br />
               </div>
+            </div>
+            <div class="col-md-4">
+              <h4 class="footer-header">SUIVEZ NOUS</h4>
               <div>
                 <ul class="social-list list-inline list--hover">
                   <li>
@@ -1213,9 +1220,13 @@
               </div>
               <div>
                 <span class="type--fine-print"
-                  >&copy; <span class="update-year"></span> JL Company.</span
+                  >&copy; <span class="update-year"></span> J.L Company.</span
                 >
               </div>
+            </div>
+            <div class="col-md-4">
+              <h4 class="footer-header">CONTACTEZ NOUS</h4>
+              Tel:
             </div>
           </div>
           <!--end of row-->
@@ -1248,5 +1259,9 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

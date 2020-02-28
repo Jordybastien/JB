@@ -2038,7 +2038,7 @@ section.bg--primary .slider[data-paging="true"] .flickity-page-dots .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #252525;
+  background: #fff;
   border: none;
   margin: 0 0.46428571em;
 }
@@ -3293,7 +3293,7 @@ form[action*="list-manage.com"] .small-meta {
     margin-right: 0.92857143em;
   }
   .bar--transparent:not(.bar--dark) {
-    background: #ffffff57;
+    background: transparent;
     /* #00000021; */
     /* #ffffff57 */
   }
@@ -3339,7 +3339,16 @@ form[action*="list-manage.com"] .small-meta {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
   }
   .bar.pos-fixed:not([class*="bg-"]) {
-    background: #ffffff94;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 9px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 5px 9px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px 9px rgba(0, 0, 0, 0.15);
+  }
+  .bar.pos-fixed:not([class*="bg-"]) .my-link{
+    color: #000!important;
+  }
+  .bar.pos-fixed:not([class*="bg-"]) .my-link:hover{
+    color: #fff!important;
   }
   .bar.pos-fixed:not([class*="bg-"]) .logo-dark {
     display: inline-block;
